@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main2">
+<!-- expense managment system -->
+    <div class="container">
+        
+
+        <button id="btn" onclick="modals()"><i class="fa-solid fa-user"></i> 
+        </button><br><label for="">Logout</label>
+        <h1 id="welcom" class=" my-4  hd ">Welcome to, User </h1><p id="para"></p> 
+
+    <h1 class="text-center my-4  hd towweee  ">Expense Management System</h1>
+    <div class="row justify-content-center mb-4 oneee">
+        <div class="col-md-3 two">
+            <input type="text" id="expense-title" class="form-control mb-2" placeholder="Title" />
+        </div>
+        <div class="col-md-3 two">
+            <input type="number" id="expense-amount" class="form-control mb-2" placeholder="Amount" />
+        </div>
+        <div class="col-md-3 two">
+            <input type="date" id="expense-date" class="form-control mb-2" />
+        </div>
+        <div class="col-md-3  two ">
+            <div class="d-flex justify-content-between">
+                <button onclick="addExpense()" class="btn btn-primary">Add </button>
+                <button onclick="deleteAll()" class="btn btn-danger">Delete All</button>
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped table-bordered oneee">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+                <th id="total-amount"></th>
+            </tr>
+        </thead>
+        <tbody id="expense-list"></tbody>
+    </table>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
